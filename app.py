@@ -17,11 +17,11 @@ def load_artifacts():
     with open('model/tokenizer.pickle', 'rb') as f:
         tokenizer = pickle.load(f)
     with open('model/best_thresholds.pickle', 'rb') as f:
-        thresholds = pickle.load(f)
+        raw_thresholds = pickle.load(f)
+    thresholds = {label: min(t, 0.5) for label, t in raw_thresholds.items()}
     return model, tokenizer, thresholds
 
 model, tokenizer, thresholds = load_artifacts()
-
 # ---------------------- TEXT CLEANING (same as training) ----------------------
 def clean_text(text):
     text = str(text).lower()

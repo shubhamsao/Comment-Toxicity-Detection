@@ -2,6 +2,9 @@
 
 A multi-label NLP classifier that detects toxic comments across 6 categories, deployed as an interactive Streamlit web app.
 
+## Demo Video
+🎥 [Watch on LinkedIn](https://www.linkedin.com/posts/shubham-sao-957453193_datascience-deeplearning-nlp-activity-7479474205319663616-flNX?utm_source=share&utm_medium=member_android&rcm=ACoAAC1zTpMBYkMfrdVYm0z5weKq8UYXsMBRjcU)
+
 ## Problem Statement
 Online platforms need automated systems to detect toxic comments (harassment, hate speech, threats) in real-time to support content moderation. This project builds a deep learning model to classify comments across 6 toxicity categories simultaneously.
 
